@@ -125,6 +125,8 @@
 		<junit_version>4.10</junit_version>
 		<easymock_version>3.0</easymock_version>
 		<jmockit_version>0.999.8</jmockit_version>
+
+		<resteasy_version>3.0.7.Final</resteasy_version>
 		<!-- Build args -->
 		<!--<argline>-server -Xms64m -Xmx64m -XX:PermSize=64m -XX:MaxPermSize=64m</argline> -->
 		<skip_maven_deploy>false</skip_maven_deploy>
@@ -146,8 +148,8 @@
 
 		<!-- for maven compiler plugin -->
 		<maven_compiler_plugin_version>2.3.2</maven_compiler_plugin_version>
-		<java_source_version>1.6</java_source_version>
-		<java_target_version>1.6</java_target_version>
+		<java_source_version>1.8</java_source_version>
+		<java_target_version>1.8</java_target_version>
 		<file_encoding>UTF-8</file_encoding>
 
 		<maven_source_plugin_version>2.1.1</maven_source_plugin_version>
@@ -399,32 +401,32 @@
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jaxrs</artifactId>
-                <version>3.0.7.Final</version>
+                <version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-client</artifactId>
-                <version>3.0.7.Final</version>
+				<version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-netty</artifactId>
-                <version>3.0.7.Final</version>
+				<version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jdk-http</artifactId>
-                <version>3.0.7.Final</version>
+				<version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-jackson-provider</artifactId>
-                <version>3.0.7.Final</version>
+                <artifactId>resteasy-jackson2-provider</artifactId>
+				<version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.resteasy</groupId>
                 <artifactId>resteasy-jaxb-provider</artifactId>
-                <version>3.0.7.Final</version>
+				<version>${resteasy_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.esotericsoftware.kryo</groupId>
