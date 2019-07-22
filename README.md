@@ -200,3 +200,9 @@ http://stackoverflow.com/questions/17196766/can-resteasy-choose-method-based-on-
 ### JAX-RS中作POST的方法能够接收多个参数吗？
 
 http://stackoverflow.com/questions/5553218/jax-rs-post-multiple-objects
+
+## by Abel
+
+### 合并 jackson2 & jackson1
+
+dubbox同时引用了 jackson1 & jackson2，在实际使用过程中极易混淆。经检查代码，jackson1是被resteasy-jackson-provider引入进来的，只需将resteasy-jackson-provider 替换为 resteasy-jackson2-provider, 并重新发布即可。
